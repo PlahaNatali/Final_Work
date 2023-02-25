@@ -5,6 +5,7 @@ string[] array = new string[5] { "147", "hi", "7458", "work", "arr" };
 string[] arrayNew = new string[array.Length];
 
 SortingArray(array, arrayNew);
+PrintArray(arrayNew);
 
 void SortingArray(string[] array, string[] array2)
 {
@@ -17,4 +18,13 @@ void SortingArray(string[] array, string[] array2)
             count++;
         }
     }
+}
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
 }
